@@ -68,7 +68,7 @@ public class MyClient {
     }
 
     public static void main(String[] args) throws IOException {
-        MyClient client = new MyClient("192.168.8.202", 6379);
+        MyClient client = new MyClient("192.168.10.21", 6379);
         client.set("qingshan", "2673");
         client.get("qingshan");
     }
