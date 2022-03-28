@@ -10,7 +10,7 @@ import redis.clients.jedis.Pipeline;
  */
 public class PipelineSet {
     public static void main(String[] args) {
-        Jedis jedis = new Jedis("127.0.0.1", 6379);
+        Jedis jedis = new Jedis("192.168.10.21", 6379);
         Pipeline pipelined = jedis.pipelined();
         long t1 = System.currentTimeMillis();
         for (int i=0; i < 100000; i++) {
