@@ -6,9 +6,7 @@ import java.io.OutputStream;
 import java.net.Socket;
 
 /**
- * @Author: qingshan
- * @Date: 2019/10/9 11:50
- * @Description: 咕泡学院，只为更好的你
+ * @Author: shouzhi@duan
  */
 public class MyClient {
     private Socket socket;
