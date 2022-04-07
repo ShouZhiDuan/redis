@@ -66,9 +66,13 @@ public class MyClient {
     }
 
     public static void main(String[] args) throws IOException {
-        MyClient client = new MyClient("192.168.10.21", 6379);
-        client.set("qingshan", "2673");
-        client.get("qingshan");
+//        MyClient client = new MyClient("192.168.10.21", 6379);
+//        client.set("test_my_redis", "test666666test");
+        //client.get("test_my_redis");
+
+        String txt = "a35bB";
+        byte[] bytes = txt.getBytes();
+        System.out.println(bytes.length);
     }
 
 }
