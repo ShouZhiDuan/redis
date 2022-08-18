@@ -3,17 +3,13 @@ package pipeline;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.Pipeline;
 
-/**
- * @Author: qingshan
- * @Date: 2019/9/26 21:42
- * @Description: 咕泡学院，只为更好的你
- */
+
 public class PipelineSet {
     public static void main(String[] args) {
-        Jedis jedis = new Jedis("192.168.10.21", 6379);
+        Jedis jedis = new Jedis("192.168.10.22", 6380);
         Pipeline pipelined = jedis.pipelined();
         long t1 = System.currentTimeMillis();
-        for (int i=0; i < 100000; i++) {
+        for (int i=0; i < 5000000; i++) {
             pipelined.set("batch"+i,""+i);
         }
         pipelined.syncAndReturnAll();
